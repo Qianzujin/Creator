@@ -1,0 +1,17 @@
+﻿
+@page
+@using Microsoft.Extensions.Localization
+@model Creator.Web.Pages.JobInfos.IndexModel
+@inject IStringLocalizer<Creator.Localization.CreatorResource> L
+@section scripts
+{
+    <abp-script src="/Pages/JobInfos/Index.js" />
+}
+<abp-card>
+    <abp-card-header>
+        <h2>@L["JobInfos"]</h2>
+    </abp-card-header>
+    <abp-card-body>
+        <abp-table striped-rows="true" id="JobInfosTable"></abp-table>
+    </abp-card-body>
+</abp-card>
